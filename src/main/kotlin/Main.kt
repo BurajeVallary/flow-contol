@@ -17,13 +17,13 @@ fun oddNumbers(){
     }
 }
 fun  words(names:Array<String>):Int{
-    var count=0
+    var add=0
     for (name in names ){
         if(name.length>5){
-            count ++
+            add ++
         }
     }
-return  count
+return  add
 }
 
 fun serveDrinkDifferrent(age: Int) {
@@ -35,18 +35,17 @@ fun serveDrinkDifferrent(age: Int) {
 }
 fun buzz(){
   for (item in 1..100){
-      if (item %3==0){
-          println("Fizz")
+       if(item %3==0&&item%5==0){
+          println("FizzBuzz")
+
       }
        else if (item%5==0){
-          println("Buzz")
+           println("Buzz")
+       }
+       else if (item %3==0){
+          println("Fizz")
+          }
       }
-      else if(item %3==0&&item%5==0){
-          println("FizzBuzz")
-      }
-      else {
-          println(item)
-      }
-  }
+    }
 
-}
+
