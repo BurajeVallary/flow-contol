@@ -28,9 +28,9 @@ return  add
 
 fun serveDrinkDifferrent(age: Int) {
      when (age) {
-        in 0..5 ->  println("Glass of milk")
-        in 6..14 -> println("Bottle of fanta Orange")
-        else -> println ("Bottle of Coca Cola")
+        in 0..5 ->  println("glass of milk")
+        in 6..14 -> println("bottle of fanta Orange")
+        else -> println ("bottle of coca cola")
     }
 }
 fun buzz(){
